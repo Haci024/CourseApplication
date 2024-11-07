@@ -16,6 +16,8 @@ namespace Entities.Models
 
         public Filial Filial { get; set; }
 
+        
+
 
     }
 }

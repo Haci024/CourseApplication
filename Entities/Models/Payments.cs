@@ -21,5 +21,9 @@ namespace Entities.Models
         public bool Status { get; set; }
 
         public decimal PaidedMoney { get; set; }
+
+        public AppUser Reservator { get; set; }
+
+        public Guid ReservatorId { get; set; }
     }
 }

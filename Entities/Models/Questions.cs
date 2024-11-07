@@ -15,7 +15,7 @@ namespace Entities.Models
             Mətn = 3,
             Audio = 4
         }
-        public uint Id { get; set; }
+        public int Id { get; set; }
 
         public string Content { get; set; }
 
@@ -23,9 +23,10 @@ namespace Entities.Models
 
         public TypeList QuestionTypes { get; set; }
 
+        public ICollection<Options> Options { get; set; }
+
         public ICollection<ExamQuestions> ExamQuestions { get; set; }
 
-        public QuestionOfDay QuestionOfDay { get; set; }
-        
+        public ICollection<StudentAnswers> StudentAnswers { get; set; }
     }
 }

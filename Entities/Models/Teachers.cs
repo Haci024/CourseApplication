@@ -21,5 +21,9 @@ namespace Entities.Models
         public DateTime BirthDate { get; set; }
 
         public ICollection<TeacherGroups> TeacherGroups { get; set; }
+
+        public string ImageUrl { get; set; }
+
+        public string SavedImageUrl { get; set; }
     }
 }

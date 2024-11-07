@@ -20,6 +20,8 @@ namespace Entities.Models
 
         public bool IsMale { get; set; }
 
+        public ICollection<StudentGroups> StudentGroups { get; set; }
+
         public Guid AppUserId { get; set; }
 
         public Universities Universities { get; set; }
@@ -30,11 +32,19 @@ namespace Entities.Models
 
         public ICollection<Payments> Payments { get; set; }
 
+        public ICollection<Attendence> Attendences { get; set; }
+
         public string  Description { get; set; }
 
         public decimal TotalPayments { get; set; }
 
         public ICollection<StudentExam> StudentExams { get; set; }
+
+        public string DocumentUrl { get; set; }
+
+        public string SavedFileUrl { get; set; }
+
+        
 
 
 

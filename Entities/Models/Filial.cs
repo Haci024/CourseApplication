@@ -8,8 +8,14 @@
 
         public bool Status { get; set; }
 
-        public ICollection<AppUserFilial> FilialUsers { get; set; }
+        public ICollection<AppUserFilial> AppUserFilial { get; set; }
 
-       
+        public ICollection<Groups> Groups { get; set; }
+
+        public Packets Packets { get; set; }
+
+        public int PacketId { get; set; }
+
+
     }
 }

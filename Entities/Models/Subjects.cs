@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entities.Models
 {
-    public class TestTable
+    public class Subjects
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
+
+        public bool Status { get; set; }
+
     }
 }

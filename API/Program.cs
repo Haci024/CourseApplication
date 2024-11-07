@@ -1,9 +1,9 @@
-using Data.DbConnection;
+using Data.Connection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>();
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

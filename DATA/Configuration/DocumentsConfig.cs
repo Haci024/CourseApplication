@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 
 namespace Data.Configuration
 {
-    public class TestConfig : IEntityTypeConfiguration<TestTable>
+    public class DocumentsConfig : IEntityTypeConfiguration<Documents>
     {
-        public void Configure(EntityTypeBuilder<TestTable> builder)
+        public void Configure(EntityTypeBuilder<Documents> builder)
         {
-            builder.HasKey(x => x.Id);  
+            builder.HasKey(x => x.Id);
+            builder.HasMany(x => x.GroupDocuments).WithOne(x => x.Documents).HasForeignKey(x => x.DocumentsId);
+
         }
     }
 }
